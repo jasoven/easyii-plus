@@ -3,14 +3,20 @@ Control panel and tools based on php framework Yii2. Easy cms for easy websites.
 
 I love Yii2 and decided to work on the already very good EasyiiCMS. 
 
-A few key observations
+A few major changers compared to Easyii 
 
-##
+###
 1. The shop mode is not very strong.
-I felt that full shopping carts were much better. I use opencart. 
-So instead this has been removed and E-catelog will be improved. 
+I felt that full shopping carts were much better. I use opencart myself. 
+So instead this has been removed and E-catelog has been improved. 
+
+
+
 
 2. Features Removed
+
+- order removed 
+
 
 - Guest Books 
 Felt it did not add any value. 
@@ -18,6 +24,21 @@ Felt it did not add any value.
 - Email Subsribe 
 SAAS like Mailchimp and opencontact do a better job. 
 
+- News and Articles 
+
+News seemed to be a subset of Articles. In wordpress it is. This made the news redundent.
+so I removed News and there is a seperate section where it just reads the articles with Tag 'News'.
+
+In actual fact, news is replaced by Facebook Feed. 
+
+- added box to resize image 
+
+- Photogallery 
+Hidden
+Instragram and other social media does a better job.  
+
+- Files 
+Hidden but not removed. Feature can be reinstated 
 
 
 
