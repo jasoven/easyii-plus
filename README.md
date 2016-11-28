@@ -1,6 +1,11 @@
 ## EasyiiCMS
 Control panel and tools based on php framework Yii2. Easy cms for easy websites.
 
+##
+This is a branch of easyii modified an improved. 
+
+
+
 #### Requirements
 The main requirement is PHP >= 5.4, Imagick extension. Other requirements you can see after download.
 
