@@ -22,7 +22,12 @@ if(!empty($item->data->color) && is_array($item->data->color)) {
 <div class="row">
     <div class="col-md-4">
         <br/>
-        <?= Html::img($item->thumb(120, 240)) ?>
+        <?php 
+		$thumb = Html::img($item->thumb(120, 240));
+		$a = Html::a($thumb,$item->image,['class'=>'easyii-box']);
+		echo $a;
+		?>
+		
         <?php if(count($item->photos)) : ?>
             <br/><br/>
             <div>

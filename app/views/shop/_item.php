@@ -2,7 +2,8 @@
 
 <div class="row">
     <div class="col-md-2">
-        <?= Html::img($item->thumb(80, 160)) ?>
+
+        <?= Html::img($item->thumb(80, 160),['class'=>'easyii-box']) ?>
     </div>
     <div class="col-md-10">
         <p><?= Html::a($item->title, ['shop/view', 'slug' => $item->slug]) ?></p>
