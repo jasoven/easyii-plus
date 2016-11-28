@@ -24,7 +24,9 @@ $this->params['breadcrumbs'][] = $cat->model->title;
     <div class="col-md-3 col-md-offset-1">
         <h4>Filters</h4>
         <div class="well well-sm">
-            <?php $form = ActiveForm::begin(['method' => 'get', 'action' => Url::to(['/shop/cat', 'slug' => $cat->slug])]); ?>
+            <?php
+			
+			$form = ActiveForm::begin(['method' => 'get', 'action' => Url::to(['/shop/cat2', 'slug' => $cat->slug])]); ?>
                 <?= $form->field($filterForm, 'brand')->dropDownList($cat->fieldOptions('brand', 'Select brand')) ?>
                 <?= $form->field($filterForm, 'priceFrom') ?>
                 <?= $form->field($filterForm, 'priceTo') ?>
@@ -32,11 +34,13 @@ $this->params['breadcrumbs'][] = $cat->model->title;
                 <?= $form->field($filterForm, 'storageFrom') ?>
                 <?= $form->field($filterForm, 'storageTo') ?>
                 <?= Html::submitButton('Submit', ['class' => 'btn btn-primary']) ?>
-            <?php ActiveForm::end(); ?>
+            <?php ActiveForm::end(); 
+			
+			?>
         </div>
     </div>
 </div>
 
-
+<?= print_r($filters);?>
 
 <?= $cat->pages() ?>

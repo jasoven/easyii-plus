@@ -37,6 +37,39 @@ class ShopController extends \yii\web\Controller
         ]);
     }
 
+	public function actionTest() {
+		
+		
+	}
+	
+    public function actionCat2($slug)
+    {
+        $filterForm = new GadgetsFilterForm();
+  
+		$cat = Catalog::cat($slug);
+		
+        if(!$cat){
+            throw new NotFoundHttpException('Shop category not found.');
+        }
+		
+        $filters = null;
+        if($filterForm->load(Yii::$app->request->get()) && $filterForm->validate()) {
+           
+			$filters = $filterForm->parse();
+		
+        }
+		$filters = ['tags'=>'gold'];
+        return $this->render('cat', [
+            'cat' => $cat,
+			'filters'=>$filters,
+            'items' => $cat->items([
+                'pagination' => ['pageSize' => 2],
+                'filters' => $filters
+            ]),
+            'filterForm' => $filterForm
+        ]);
+    }	
+	
     public function actionSearch($text)
     {
         $text = filter_var($text, FILTER_SANITIZE_STRING);

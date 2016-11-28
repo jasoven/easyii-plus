@@ -7,6 +7,7 @@ use yii\base\Model;
 class GadgetsFilterForm extends Model
 {
     public $brand;
+	public $tags;
     public $priceFrom;
     public $priceTo;
     public $storageFrom;
@@ -53,7 +54,9 @@ class GadgetsFilterForm extends Model
         if ($this->touchscreen) {
             $filters['touchscreen'] = $this->touchscreen;
         }
-
+        if ($this->tags) {
+            $filters['tags'] = $this->tags;
+        }
         return $filters;
     }
 }

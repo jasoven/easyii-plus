@@ -21,7 +21,7 @@
             <?php if($item->discount) : ?>
                 <del class="small"><?= $item->oldPrice ?></del>
             <?php endif; ?>
-            <?= $item->price ?>$
+            $<?= $item->price ?>
         </h3>
     </div>
 </div>

@@ -8,7 +8,14 @@ A few major changers compared to Easyii
 ###
 1. The shop mode is not very strong.
 I felt that full shopping carts were much better. I use opencart myself. 
-So instead this has been removed and E-catelog has been improved. 
+So instead this has been removed and E-catelog has been improved.
+
+a) Category now allows unique search box and variables item rendering
+
+b) Additional Data is stored as Json (not ideal but suitable for category < 100)
+   Data is also stored in mysql as catalog_item_data  name => value pairs 
+   
+ 
 
 
 
@@ -34,12 +41,14 @@ In actual fact, news is replaced by Facebook Feed.
 - added box to resize image 
 
 - Photogallery 
-Hidden
+Hidden / Optional 
 Instragram and other social media does a better job.  
+But the plug and insert are good. 
 
 - Files 
 Hidden but not removed. Feature can be reinstated 
 
+1. Error reporting switched to no notice in index.php
 
 
 #### Requirements
