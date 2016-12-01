@@ -58,13 +58,14 @@ class ShopController extends \yii\web\Controller
 			$filters = $filterForm->parse();
 		
         }
-		$filters = ['tags'=>'gold'];
+	
         return $this->render('cat', [
             'cat' => $cat,
 			'filters'=>$filters,
             'items' => $cat->items([
                 'pagination' => ['pageSize' => 2],
-                'filters' => $filters
+                'filters' => $filters,
+				'where'=>['LIKE','title',['Ga','6']]
             ]),
             'filterForm' => $filterForm
         ]);

@@ -27,7 +27,7 @@ $goodsCount = count(Shopcart::goods());
                         'options' => ['class' => 'nav navbar-nav'],
                         'items' => [
                             ['label' => 'Home', 'url' => ['site/index']],
-                            ['label' => 'Shop', 'url' => ['shop/index']],
+                            ['label' => 'Products', 'url' => ['shop/index']],
                             ['label' => 'News', 'url' => ['news/index']],
                             ['label' => 'Articles', 'url' => ['articles/index']],
                             ['label' => 'Gallery', 'url' => ['gallery/index']],
@@ -70,7 +70,7 @@ $goodsCount = count(Shopcart::goods());
                 <?php if(Yii::$app->request->get(Subscribe::SENT_VAR)) : ?>
                     You have successfully subscribed
                 <?php else : ?>
-                    <?= Subscribe::form() ?>
+                    <?php // Subscribe::form() ?>
                 <?php endif; ?>
             </div>
             <div class="col-md-4 text-right">

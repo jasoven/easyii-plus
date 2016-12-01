@@ -1,11 +1,11 @@
 <?php use yii\helpers\Html; ?>
 
 <div class="row">
-    <div class="col-md-2">
+    <div class="col-md-4">
 
-        <?= Html::img($item->thumb(80, 160),['class'=>'easyii-box']) ?>
+        <?= Html::img($item->thumb(180, 160)) ?>
     </div>
-    <div class="col-md-10">
+    <div class="col-md-8">
         <p><?= Html::a($item->title, ['shop/view', 'slug' => $item->slug]) ?></p>
         <p>
             <span class="text-muted">Storage:</span> <?= $item->data->storage ?> GB

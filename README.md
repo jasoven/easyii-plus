@@ -15,14 +15,16 @@ a) Category now allows unique search box and variables item rendering
 b) Additional Data is stored as Json (not ideal but suitable for category < 100)
    Data is also stored in mysql as catalog_item_data  name => value pairs 
    
- 
+c) Clicking on an item image now in shop/view will open the lightbox 
+
+d) 
 
 
 
 
 2. Features Removed
 
-- order removed 
+- Order removed 
 
 
 - Guest Books 

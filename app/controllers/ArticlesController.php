@@ -14,9 +14,11 @@ class ArticlesController extends \yii\web\Controller
     public function actionCat($slug, $tag = null)
     {
         $cat = Article::cat($slug);
-        if(!$cat){
+
+		if(!$cat){
             throw new \yii\web\NotFoundHttpException('Article category not found.');
         }
+		
 
         return $this->render('cat', [
             'cat' => $cat,
@@ -24,6 +26,8 @@ class ArticlesController extends \yii\web\Controller
         ]);
     }
 
+
+	
     public function actionView($slug)
     {
         $article = Article::get($slug);
