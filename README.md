@@ -5,10 +5,17 @@ I love Yii2 and decided to work on the already very good EasyiiCMS.
 
 #Installation 
 
-1. Clone to Directory 
+1. Git Clone to Directory 
+
 2. Create a database 
-3. Import the easyii-db.sql database 
-4. Login to url/admin and login useing the logins 
+
+3. Install all the dependencies 
+   ``` composer install ```
+
+4. There a pathing issue with pictures so you might have to direct to route   
+   
+4. Import the easyii-db.sql database 
+5. Login to url/admin and login useing the logins 
  
 
 
