@@ -14,7 +14,9 @@ I love Yii2 and decided to work on the already very good EasyiiCMS.
 
 
 
-A few major changers compared to Easyii 
+ 
+ 
+# A few major changers compared to Easyii 
 
 ###
 1. The shop mode is not very strong.
