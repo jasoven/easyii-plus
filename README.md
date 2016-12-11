@@ -3,6 +3,17 @@ Control panel and tools based on php framework Yii2. Easy cms for easy websites.
 
 I love Yii2 and decided to work on the already very good EasyiiCMS. 
 
+#Installation 
+
+1. Clone to Directory 
+2. Create a database 
+3. Import the easyii-db.sql database 
+4. Login to url/admin and login useing the logins 
+ 
+
+
+
+
 A few major changers compared to Easyii 
 
 ###

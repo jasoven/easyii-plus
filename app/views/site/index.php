@@ -6,6 +6,7 @@ use yii\easyii\modules\guestbook\api\Guestbook;
 use yii\easyii\modules\news\api\News;
 use yii\easyii\modules\page\api\Page;
 use yii\easyii\modules\text\api\Text;
+use yii\easyii\modules\subscribe\api\Subscribe;
 use yii\helpers\Html;
 
 $page = Page::get('page-index');
@@ -18,6 +19,7 @@ $this->title = $page->seo('title', $page->model->title);
 <div class="text-center">
     <h1><?= Text::get('index-welcome-title') ?></h1>
     <p><?= $page->text ?></p>
+	<p><?= 	Text::get('home-text-top');?>
 </div>
 
 <br/>
@@ -81,3 +83,9 @@ $this->title = $page->seo('title', $page->model->title);
 </div>
 
 <br/>
+<div class="text-center">
+    <h2>Subscribe</h2>
+    <br/>
+	<?= Subscribe::form()?>
+
+</div>
