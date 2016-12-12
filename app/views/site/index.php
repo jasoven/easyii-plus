@@ -56,6 +56,7 @@ $this->title = $page->seo('title', $page->model->title);
     <div class="row text-left">
         <?php $article = Article::last(1, ['category_id' => 1]); ?>
         <div class="col-md-2">
+		    <?= $article->thumb(160, 120)?>
             <?= Html::img($article->thumb(160, 120)) ?>
         </div>
         <div class="col-md-10 text-left">

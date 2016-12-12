@@ -6,5 +6,8 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
+ 
+# RewriteRule ^.*/uploads/(.*)$ http://%{HTTP_HOST}/projects/perthproperty.sg/easyii-plus/uploads/$1 [L,R=301]
+
 # otherwise forward it to index.php
 RewriteRule . index.php
