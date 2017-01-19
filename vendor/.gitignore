@@ -1,5 +1,15 @@
-*
+2amigos/*
+bin/*
+bower/*
+cebe/*
+composer/*
+creocoder/*
+ezyang/*
+fzaninotto/*
+phpspec/*
+swiftmailer/*
+yiisoft/*
 !.gitignore
 !.htaccess
-!noumo/ 
+autoload.php
 
