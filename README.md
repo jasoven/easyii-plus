@@ -37,7 +37,8 @@ b) Additional Data is stored as Json (not ideal but suitable for category < 100)
    
 c) Clicking on an item image now in shop/view will open the lightbox 
 
-d) 
+d) Added a Nav Menu module that allows menu features in the home page 
+
 
 
 

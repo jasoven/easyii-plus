@@ -3,8 +3,11 @@ namespace app\assets;
 
 class AppAsset extends \yii\web\AssetBundle
 {
-    public $sourcePath = '@app/media';
-    public $css = [
+    //public $sourcePath = '@app/media';
+    //public $sourcePath = '@web/media';
+	public $sourcePath = '@app/media';
+    //public $baseUrl = '@web/media';
+	public $css = [
         'css/styles.css',
     ];
     public $js = [

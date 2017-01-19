@@ -4,8 +4,12 @@ use yii\easyii\modules\subscribe\api\Subscribe;
 use yii\helpers\Url;
 use yii\widgets\Breadcrumbs;
 use yii\widgets\Menu;
+use yii\easyii\modules\navmenu\api\Navmenu;
 
 $goodsCount = count(Shopcart::goods());
+
+
+
 ?>
 <?php $this->beginContent('@app/views/layouts/base.php'); ?>
 <div id="wrapper" class="container">
@@ -24,8 +28,8 @@ $goodsCount = count(Shopcart::goods());
 
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <?= Menu::widget([
-                        'options' => ['class' => 'nav navbar-nav'],
-                        'items' => [
+                        'options' => ['class' => 'nav navbar-nav '],
+                        /* 'items' => [
                             ['label' => 'Home', 'url' => ['site/index']],
                             ['label' => 'Products', 'url' => ['shop/index']],
                             ['label' => 'News', 'url' => ['news/index']],
@@ -34,7 +38,9 @@ $goodsCount = count(Shopcart::goods());
                         //    ['label' => 'Guestbook', 'url' => ['guestbook/index']],
                             ['label' => 'FAQ', 'url' => ['faq/index']],
                         //    ['label' => 'Contact', 'url' => ['/contact/index']],
-                        ],
+                        */
+						'items' => Navmenu::get()
+					   
                     ]); ?>
                     <a href="<?= Url::to(['/shopcart']) ?>" class="btn btn-default navbar-btn navbar-right" title="Complete order">
                         <i class="glyphicon glyphicon-shopping-cart"></i>

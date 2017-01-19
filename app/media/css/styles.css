@@ -7,6 +7,11 @@ html, body{
 body{
     font-family: 'Open Sans', sans-serif;
 }
+
+.navbar-nav > li:hover > .dropdown-menu {
+   display: block !important;
+} 
+
 #wrapper {
     min-height: 100%;
     height: auto !important;
