@@ -41,6 +41,6 @@ $this->params['breadcrumbs'][] = $cat->model->title;
     </div>
 </div>
 
-<?= print_r($filters);?>
+
 
 <?= $cat->pages() ?>

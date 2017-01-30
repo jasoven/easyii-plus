@@ -60,6 +60,10 @@ $config = [
                 ],
             ],
         ],
+		'assetsAutoCompress' =>[
+					'class'         => '\skeeks\yii2\assetsAuto\AssetsAutoCompressComponent',
+		],		
+		
         'db' => require(__DIR__ . '/db.php'),
     ],
     'params' => $params,
@@ -67,6 +71,9 @@ $config = [
 
 if (YII_ENV_DEV) {
     // configuration adjustments for 'dev' environment
+	$config['components']['assetManager']['forceCopy'] = true;
+	
+	
     $config['bootstrap'][] = 'debug';
     $config['modules']['debug'] = 'yii\debug\Module';
 
