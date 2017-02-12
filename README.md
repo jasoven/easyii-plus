@@ -76,6 +76,17 @@ Hidden but not removed. Feature can be reinstated
 
 1. Error reporting switched to no notice in index.php
 
+### Production Ready
+
+1. Delete Assets Folder. Cache will handle
+2. Update config/web.php
+   comment out force copy 
+   
+2. Comment out Yii Debug
+3. Clear image directories 
+4. 
+
+
 
 #### Requirements
 The main requirement is PHP >= 5.4, Imagick extension. Other requirements you can see after download.

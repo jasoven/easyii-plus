@@ -40,6 +40,9 @@ $config = [
         'assetManager' => [
             // uncomment the following line if you want to auto update your assets (unix hosting only)
             //'linkAssets' => true,
+			 'forceCopy' => YII_DEBUG ? true : false,
+
+
             'bundles' => [
                 'yii\web\JqueryAsset' => [
                     'js' => [YII_DEBUG ? 'jquery.js' : 'https://code.jquery.com/jquery-2.2.4.min.js'],
