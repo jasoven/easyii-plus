@@ -16,6 +16,8 @@ $this->title = $page->seo('title', $page->model->title);
 
 <?= Carousel::widget(1140, 520) ?>
 
+
+
 <div class="text-center">
     <h1><?= Text::get('index-welcome-title') ?></h1>
     <p><?= $page->text ?></p>

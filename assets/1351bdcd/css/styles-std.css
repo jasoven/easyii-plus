@@ -1,0 +1,7 @@
+/* These are style that are defaulted */
+
+/* Navigation Bar */
+
+.navbar-nav > li:hover > .dropdown-menu {
+   display: block !important;
+} 

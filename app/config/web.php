@@ -12,6 +12,7 @@ $config = [
     'language' => 'en-US',
     'runtimePath' => $webroot . '/runtime',
     'vendorPath' => $webroot . '/vendor',
+	
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
@@ -41,7 +42,7 @@ $config = [
             //'linkAssets' => true,
             'bundles' => [
                 'yii\web\JqueryAsset' => [
-                    'js' => [YII_DEBUG ? 'jquery.js' : 'jquery.min.js'],
+                    'js' => [YII_DEBUG ? 'jquery.js' : 'https://code.jquery.com/jquery-2.2.4.min.js'],
                 ],
                 'yii\bootstrap\BootstrapAsset' => [
                     'css' => [YII_DEBUG ? 'css/bootstrap.css' : 'css/bootstrap.min.css'],
