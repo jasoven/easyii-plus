@@ -40,7 +40,6 @@ $config = [
         'assetManager' => [
             // uncomment the following line if you want to auto update your assets (unix hosting only)
             //'linkAssets' => true,
-			 'forceCopy' => YII_DEBUG ? true : false,
 
 
             'bundles' => [
@@ -63,10 +62,7 @@ $config = [
                     'levels' => ['error', 'warning'],
                 ],
             ],
-        ],
-		'assetsAutoCompress' =>[
-					'class'         => '\skeeks\yii2\assetsAuto\AssetsAutoCompressComponent',
-		],		
+        ],	
 		
         'db' => require(__DIR__ . '/db.php'),
     ],
